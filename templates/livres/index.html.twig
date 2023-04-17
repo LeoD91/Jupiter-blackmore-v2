@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LivresController!{% endblock %}
+
+{% block body %}
+<head>
+ <link rel="stylesheet" href="{{asset('/assets/CSS/livres.css')}}">
+</head>
+<section class="section-un">
+        <h1 style="font-family: 'Playfair Display', Arial, Helvetica, sans-serif; font-size: 85px; color: black; font-weight: bold; text-align: center; padding-top: 210px;">Aury et <br>le chapeau magique</h1>
+        <figcaption>Musique de GuillermeBernades (Sacred Garden)</figcaption>
+        <audio src="{{asset('/assets/musiques/sacred-garden-10377.mp3')}}" controls style="margin-left:406px;"></audio>
+        <div class="glassmorphisme">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti nam architecto <br>dignissimos rerum esse voluptatem laudantium, commodi quae atque exercitationem eius. Inventore <br>eius nulla cumque, deserunt amet fugit veniam nam.
+            Fugiat repellat, iure <br>enim repudiandae aliquid tempora exercitationem itaque commodi libero tempore at est <br>autem doloribus labore eius suscipit. Laborum quos fugiat molestiae blanditiis! Veniam <br>voluptate minima impedit esse quos.
+            Consectetur, at tenetur sit delectus et <br>tempore recusandae. Corporis esse fugit quae dolor asperiores, porro blanditiis nobis <br>veritatis incidunt, eum, consequatur earum ut placeat voluptate? Commodi molestias animi <br>ipsa officiis? </p>
+            <p id="infos">Plus d'informations</p><img src="{{asset('/assets/images/fleche2.png')}}" alt="Fleche" id="fleche-circle" style="margin-left:313px; margin-top:-41px;">
+        </div>
+        <div class="fond"></div>
+    </section>
+    <!--Section deux-->
+    <section class="section-deux">
+        <h2>Livres</h2>
+        <div class="bloc-un">
+            <img src="{{asset('/assets/images/paysage_purple.png')}}" alt="Bonbon" id="bonbon">
+            <h3 id="sous-titre-un">Titre</h3>
+            <p id="lorem-un">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis <br>id sunt totam quia, animi neque beatae unde laudantium <br>et amet optio inventore corporis assumenda illo, praesentium repudiandae<br> maiores ipsum molestiae?</p>
+            <p id="parution">Paru le 26/01/2023</p>
+            <a href="{{path('app_fenetre_popup')}}" onload="window.open(this.href, 'livre-suite', 'height=100, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no'); return(false);" id="suite">Lire la suite</p></a>
+            <img src="{{asset('/assets/images/fleche-blanche.png')}}" alt="Fleche" id="fleche-un" style="width:37px; height:37px;">
+            <button type="button" name="nom_champ" id="btn-un">Acheter Le Livre</button>
+        </div>
+        <div class="bloc-deux">
+            <img src="{{asset('/assets/images/chateau.png')}}" alt="Chateau" id="chateau">
+            <h3 id="sous-titre-deux">Titre</h3>
+            <p id="lorem-deux">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis <br>id sunt totam quia, animi neque beatae unde laudantium <br>et amet optio inventore corporis assumenda illo, praesentium repudiandae maiores ipsum molestiae?</p>
+            <p id="parution-deux">Paru le 26/01/2023</p>
+            <a href="{{path('app_fenetre_popup')}}" onload="window.open(this.href, 'livre-suite', 'height=100, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no'); return(false);" id="suite" style="margin-left: 958px;">Lire la suite</p></a>
+            <img src="{{asset('/assets/images/fleche-blanche.png')}}" alt="Fleche" id="fleche-deux" style="width:37px; height: 37px">
+            <button type="button" name="nom_champ" id="btn-deux">Acheter Le Livre</button>
+        </div>
+    </section>
+     <!--Section trois-->
+     <section class="section-trois" id="character">
+        <h2 id="titre-deux">Informations Sur Les <br>Personnages</h2>
+        <img src="{{asset('/assets/images/girl.png')}}" alt="Fille magique" id="fille">
+        <div id="perso">
+            <h3>Nom du personnage</h3>
+            <p id="descriptif">A short description of your character</p>
+             <!-- Button -->
+    <button type="button" class="btn btn-primary btn-lg position-absolute" style="right: 652px; background-color: #486cb1; width: 246px;" data-bs-toggle="modal" data-bs-target="#popup">Plus d'informations</button>
+
+    <!-- Pop-up -->
+      <div id="popup" class="modal">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <div class="modal-header text-secondary-centered">
+                <h3>Nom du personnage</h3>
+            </div>
+            <div class="modal-body bg-dark text-white">
+                <img src="{{asset('/assets/images/girl-dechire.jpg')}}" alt="Fille" class="col-md-4">
+                <p> Lorem ipsum dolor sit amet consectetur. Turpis congue lacus urna sed<br> nec in adipiscing. Interdum aenean viverra eget velit sapien volutpat integer<br> non scelerisque. Sit in nisl turpis ipsum consectetur in fames fames<br> malesuada. Purus elit elit orci non. Sed nulla facilisis augue egestas<br> fermentum mauris aliquam ornare. Id eget egestas mi massa molestie convallis<br> posuere diam adipiscing. Sit et ac nascetur sagittis sagittis. Ipsum adipiscing<br> donec aenean elementum. Cras id aenean risus mauris.
+                    At amet eu<br> lacus vulputate vestibulum aliquam nisi ornare. Et hendrerit auctor accumsan nam et<br> potenti. Sit lectus mi phasellus purus fringilla. Eu pharetra sed imperdiet<br> posuere nec hac non. Donec dignissim elementum sed iaculis velit ullamcorper<br> hac amet. Adipiscing mi at facilisis vulputate erat eu. Pellentesque nunc<br> nisl dignissim morbi orci orci et libero. </p>
+            </div>
+            <div class="modal-footer-centered">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <img src="{{asset('/assets/images/fleche.png')}}" alt="Flèche next" id="next">
+    </section>
+     <script src="{{asset('/assets/js/app.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    {# <ul>
+        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/Jupiter Blackmore_v2/Jupiter Blacmore_v2/src/Controller/LivresController.php'|file_link(0) }}">src/Controller/LivresController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/wamp64/www/Jupiter Blackmore_v2/Jupiter Blacmore_v2/templates/livres/index.html.twig'|file_link(0) }}">templates/livres/index.html.twig</a></code></li>
+    </ul> #}
+</div>
+{% endblock %}

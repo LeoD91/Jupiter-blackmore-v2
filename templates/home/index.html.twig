@@ -1,0 +1,250 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<!--Section un-->
+    <section class="section-un">
+        <h1>Lire un roman c'est bien, <br>Lire un roman illustré c'est <br>mieux !</h1>
+    </section>
+    <!--Section deux-->
+    <section class="section-deux">
+        <h2 id="actu">Actualité</h2>
+        <div class="bloc">
+            <img src="{{ asset('/assets/images/chateau.png')}}" alt="Paysage avec un chateau">
+        <div class="bouton">
+            <ul>
+                <li><button type="button" name="nom_champ" id="butn-un" style=" list-style-type: none; background: linear-gradient(#B1488E, #486CB1); color: #fff; border: none; border-radius: 30px; padding: 8px 32px; text-align: center; display: inline-block; font-size: 16px; font-family: 'Playfair Display', Arial, Helvetica, sans-serif; z-index: 2; position: absolute; width: 232px;"> <a href="#history">Nouvelle Histoire</a></button></li>
+                <li><button type="button" name="nom_champ" id="butn-un" style=" list-style-type: none; background: linear-gradient(#B1488E, #486CB1); color: #fff; border: none; border-radius: 30px; padding: 8px 32px; text-align: center; display: inline-block; font-size: 16px; font-family: 'Playfair Display', Arial, Helvetica, sans-serif; z-index: 2; position: absolute; width: 232px; margin-top: 88px;"><a href="#character">Nouveaux Personnages</a></button></li>
+                <li><button type="button" name="nom_champ" id="butn-un" style=" list-style-type: none; background: linear-gradient(#B1488E, #486CB1); color: #fff; border: none; border-radius: 30px; padding: 8px 32px; text-align: center; display: inline-block; font-size: 16px; font-family: 'Playfair Display', Arial, Helvetica, sans-serif; z-index: 2; position: absolute; width: 232px; margin-top: 179px;"><a href="#lieux">Lieux d'Aury</a></button></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <!--Section trois-->
+    <section class="section-trois" id="character">
+        <h2 id="titre-deux">Informations Sur Les <br>Personnages</h2>
+        <img src="{{ asset('/assets/images/girl.png')}}" alt="Fille magique" id="fille">
+        <div id="perso">
+            <h3>Nom du personnage</h3>
+            <p id="descriptif">A short description of your character</p>
+             <!-- Button -->
+    <button type="button" class="btn btn-primary btn-lg position-absolute" style="right: 652px; background-color: #486cb1" data-bs-toggle="modal" data-bs-target="#popup">Plus d'informations</button>
+
+    <!-- Pop-up -->
+      <div id="popup" class="modal">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <div class="modal-header text-secondary-centered">
+                <h3>Nom du personnage</h3>
+            </div>
+            <div class="modal-body bg-dark text-white">
+                <img src="{{ asset('/assets/images/girl-dechire.jpg ')}}" alt="Fille" class="col-md-4">
+                <p> Lorem ipsum dolor sit amet consectetur. Turpis congue lacus urna sed<br> nec in adipiscing. Interdum aenean viverra eget velit sapien volutpat integer<br> non scelerisque. Sit in nisl turpis ipsum consectetur in fames fames<br> malesuada. Purus elit elit orci non. Sed nulla facilisis augue egestas<br> fermentum mauris aliquam ornare. Id eget egestas mi massa molestie convallis<br> posuere diam adipiscing. Sit et ac nascetur sagittis sagittis. Ipsum adipiscing<br> donec aenean elementum. Cras id aenean risus mauris.
+                    At amet eu<br> lacus vulputate vestibulum aliquam nisi ornare. Et hendrerit auctor accumsan nam et<br> potenti. Sit lectus mi phasellus purus fringilla. Eu pharetra sed imperdiet<br> posuere nec hac non. Donec dignissim elementum sed iaculis velit ullamcorper<br> hac amet. Adipiscing mi at facilisis vulputate erat eu. Pellentesque nunc<br> nisl dignissim morbi orci orci et libero. </p>
+            </div>
+            <div class="modal-footer-centered">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <img src="{{asset('/assets/images/fleche.png')}}" alt="Flèche next" id="next">
+    </section>
+   
+    <!--Section quatre-->
+    <section class="section-quatre">
+        <h2 id="history">Nouvelles Histoires</h2>
+        <div class="relative" style="position: relative;">
+        <div class="bloc-deux">
+            <h3 >Aury et le <br>chapeau magique</h3>
+            <img src="{{asset('/assets/images/paysage_purple.png')}}" alt="Paysage bonbons" id="bonbon">
+        </div>
+        <div class="bloc-trois">
+            <h3>Lorem ipsum</h3>
+            <img src="{{asset('/assets/images/neigeux.jpg')}}" alt="Montagne enneigée" id="neige">
+        </div>
+    </div>
+
+    <style>
+        #image-modal{
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+        #butModal{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 2885px;
+            z-index: 2;
+            margin-left: -278px;
+            border-radius: 20px;
+            background-color: #486CB1;
+        }
+        #logo-modal{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+    <div class="container">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="butModal">Plus d'informations</button>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Titre du modal</h5>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <img src="{{asset('/assets/images/paysage_purple.png')}}" alt="Paysage bonbon" id="image-modal">
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur. Turpis congue lacus urna sed<br> nec in adipiscing. Interdum aenean viverra eget velit sapien volutpat integer<br> non scelerisque. Sit in nisl turpis ipsum consectetur in fames fames<br> malesuada. Purus elit elit orci non. Sed nulla facilisis augue egestas<br> fermentum mauris aliquam ornare. Id eget egestas mi massa molestie convallis<br> posuere diam adipiscing. Sit et ac nascetur sagittis sagittis. Ipsum adipiscing<br> donec aenean elementum. Cras id aenean risus mauris.
+At amet eu<br> lacus vulputate vestibulum aliquam nisi ornare. Et hendrerit auctor accumsan nam<br> et potenti. Sit lectus mi phasellus purus fringilla. Eu pharetra sed<br> imperdiet posuere nec hac non. Donec dignissim elementum sed iaculis velit<br> ullamcorper hac amet. Adipiscing mi at facilisis vulputate erat eu. Pellentesque<br> nunc nisl dignissim morbi orci orci et libero. <br><br>
+                        <h6>Où Le Trouver ?</h6> <br>
+                        <img src="{{asset('/assets/images/amazon.png')}}" alt="Amazon" id="logo-modal"><img src="{{asset('/assets/images/cultura.png')}}" alt="Cultura" id="logo-modal"><img src="{{asset('/assets/images/logo2.png')}}" alt="Logo deux" id="logo-modal"><img src="{{asset('/assets/images/Wattpad.png')}}" alt="Wattpad" id="logo-modal">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <style>
+        #image-modal{
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+        #butModal-deux{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 2885px;
+            z-index: 2;
+            margin-left: 541px;
+            border-radius: 20px;
+            background-color: #486CB1;
+        }
+        #logo-modal-deux{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+    <div class="container">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="butModal-deux">Plus d'informations</button>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Titre du modal</h5>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <img src="{{asset('/assets/images/chateau.png')}}" alt="Chateau" id="image-modal-deux">
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur. Turpis congue lacus urna sed<br> nec in adipiscing. Interdum aenean viverra eget velit sapien volutpat integer<br> non scelerisque. Sit in nisl turpis ipsum consectetur in fames fames<br> malesuada. Purus elit elit orci non. Sed nulla facilisis augue egestas<br> fermentum mauris aliquam ornare. Id eget egestas mi massa molestie convallis<br> posuere diam adipiscing. Sit et ac nascetur sagittis sagittis. Ipsum adipiscing<br> donec aenean elementum. Cras id aenean risus mauris.
+At amet eu<br> lacus vulputate vestibulum aliquam nisi ornare. Et hendrerit auctor accumsan nam<br> et potenti. Sit lectus mi phasellus purus fringilla. Eu pharetra sed<br> imperdiet posuere nec hac non. Donec dignissim elementum sed iaculis velit<br> ullamcorper hac amet. Adipiscing mi at facilisis vulputate erat eu. Pellentesque<br> nunc nisl dignissim morbi orci orci et libero. <br><br>
+                        <h6>Où Le Trouver ?</h6> <br>
+                        <img src="{{asset('/assets/images/amazon.png')}}" alt="Amazon" id="logo-modal-deux"><img src="{{asset('/assets/images/cultura.png')}}" alt="Cultura" id="logo-modal-deux"><img src="{{asset('/assets/images/logo2.png')}}" alt="Logo deux" id="logo-modal-deux"><img src="{{asset('/assets/images/Wattpad.png')}}" alt="Wattpad" id="logo-modal-deux">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--Section cinq-->
+    <section class="section-cinq">
+        <h2 id="lieux">Lieux d'Aury</h2>
+        <div class="container">  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="{{asset('/assets/images/dragon1.jpg')}}" alt="Dragon" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="{{asset('/assets/images/galaxie.jpg')}}" alt="Galaxie" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="{{asset('/assets/images/portal.jpg')}}" alt="Portail magique" style="width:100%;">
+                </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div> 
+          <style>
+            #image-modal{
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+            }
+            #butModal-trois{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 4263px;
+                z-index: 2;
+                margin-left: 22px;
+                border-radius: 20px;
+                background-color: #486CB1;
+            }
+            .modal-content-trois{
+                background-color: transparent;
+                background-image: url(images/parchemin.png);
+                background-repeat: no-repeat;
+                background-size: 664px 697px;
+                background-position: center;
+            }
+        </style>
+    
+        <div class="container">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="butModal-trois">Plus d'informations</button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content-trois">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Lorem Ipsum</h5>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <img src="{{asset('/assets/images/cerf-dechire.png')}}" alt="Foret enchante" id="image-modal">
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur. Turpis congue lacus urna sed<br> nec in adipiscing. Interdum aenean viverra eget velit sapien volutpat integer<br> non scelerisque. Sit in nisl turpis ipsum consectetur in fames fames<br> malesuada. Purus elit elit orci non. Sed nulla facilisis augue egestas<br> fermentum mauris aliquam ornare. Id eget egestas mi massa molestie convallis<br> posuere diam adipiscing. Sit et ac nascetur sagittis sagittis. Ipsum adipiscing<br> donec aenean elementum. Cras id aenean risus mauris.
+    At amet eu<br> lacus vulputate vestibulum aliquam nisi ornare. Et hendrerit auctor accumsan nam<br> et potenti. Sit lectus mi phasellus purus fringilla. Eu pharetra sed<br> imperdiet posuere nec hac non. Donec dignissim elementum sed iaculis velit<br> ullamcorper hac amet. Adipiscing mi at facilisis vulputate erat eu. Pellentesque<br> nunc nisl dignissim morbi orci orci et libero. <br><br>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+     
+    </section>
+{% endblock %}

@@ -1,0 +1,741 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+}
+
+/**Header**/
+#container ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+    margin-top: -48px;
+    margin-right: -676px;
+}
+#container ul li{
+    display: inline;
+}
+#container li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/**Section un**/
+.section-un{
+    background-color: #323C53;
+    background-image: url(../images/foret-enchantee.png);
+    width: 100%;
+    height: 766px;
+    text-align: center;
+}
+.section-un h1{
+    font-size: 85px;
+    font-weight: bold;
+    color: black;
+    padding-top: 200px;
+}
+
+/**Section deux**/
+.section-deux{
+    background-color: #323C53;
+    margin-top: 0px;
+    padding-bottom: 218px;
+    width: 100%;
+}
+.section-deux #actu{
+    color: white;
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 50px;
+}
+.section-deux img{
+    width: 880px;
+    height: 635px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+button {
+    list-style-type: none;
+    
+    background: linear-gradient(#B1488E, #486CB1);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Playfair Display";
+    margin-top: 49px;
+    margin-left: 226px;
+    width: 241px;
+}
+#butn-un{
+    text-decoration: none;
+}
+.section-deux .bloc{
+    display: flex;
+}
+.section-deux ul{
+    list-style-type: none;
+    margin-top: 230px;
+}
+
+/**Section trois**/
+.section-trois{
+    background-color: #B1488E;
+    margin-top: -20px;
+    padding-bottom: 218px;
+    width: 100%;
+}
+.section-trois #titre-deux{
+    color: black;
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 50px;
+}
+.section-trois #fille{
+    width: 372px;
+    height: 372px;
+    margin-left: 50px;
+    margin-top: 136px;
+}
+.section-trois #perso h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 686px;
+    margin-top: -270px;
+}
+.section-trois #descriptif{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-left: 686px;
+    margin-top: 28px;
+}
+.section-trois #info{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-left: 686px;
+    font-style: italic;
+}
+.section-trois #fleche-circle {
+    margin-left: 893px;
+    margin-top: -39px;
+    z-index: 2;
+    position: absolute;
+}
+.section-trois #next {
+    margin-left: 1363px;
+    margin-top: -208px;
+}
+
+/**Section quatre**/
+.section-quatre{
+    background-color: #323C53;
+    margin-top: -20px;
+    padding-bottom: 918px;
+    width: 100%;
+}
+.section-quatre h2{
+    color: white;
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 50px;
+}
+.section-quatre .bloc-deux #bonbon{
+    width: 679px;
+    height: 614px;
+    filter: drop-shadow(5px 5px 10px #000) brightness(50%);
+    -webkit-filter: brightness(50%);
+    z-index: 1;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+.section-quatre .bloc-deux #bonbon:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.section-quatre .bloc-deux h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 214px;
+    margin-top: 77px;
+}
+.section-quatre .bloc-deux p{
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 392px;
+    margin-top: 589px;
+}
+.section-quatre .bloc-deux #fleche-c{
+    z-index: 2;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 590px;
+}
+.section-quatre .bloc-trois #neige{
+    width: 679px;
+    height: 614px;
+    filter: drop-shadow(5px 5px 10px #000) brightness(50%);
+    -webkit-filter: brightness(50%);
+    z-index: 1;
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 859px;
+    border-radius: 20px;
+} 
+.section-quatre .bloc-trois #neige:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.section-quatre .bloc-trois h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 1079px;
+    margin-top: 88px;
+}
+.section-quatre .bloc-trois #plus-info{
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 1230px;
+    margin-top: 589px;
+}
+.section-quatre .bloc-trois #fleche-c2{
+    z-index: 2;
+    position: absolute;
+    margin-left: 1433px;
+    margin-top: 590px;
+}
+
+/* Stylez le bouton de connexion*/
+.form-container .btn {
+    background-color: #B1488E;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  /* Stylez le bouton pour annuler */
+  .form-container .cancel {
+    background-color: #486CB1;
+  }
+  /* Planez les effets pour les boutons */
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+   /* Masquez la forme Popup */
+   .form-popup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-45%, 5%);
+    border: 2px solid #666;
+    z-index: 9;
+  }
+
+/**Section cinq**/
+.section-cinq{
+    background-color: #3D715C;
+    margin-top: -20px;
+    padding-bottom: 211px;
+    width: 100%;
+}
+.section-cinq h2{
+    color: black;
+    font-size: 65px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.section-cinq img{
+    width: 921px;
+    height: 602px;
+}
+
+
+
+/**Footer**/
+footer{
+    background-color: #4C7097;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 523px;
+}
+footer table{
+    margin-left: 200px;
+}
+footer table th{
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+footer table td{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+.footer-un {
+    margin-left: 1062px;
+    margin-top: -270px;
+}
+.footer-un ul{
+    list-style-type: none;
+}
+.footer-un ul h2{
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    color: white;
+}
+.footer-un ul #inscription{
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.footer-un ul input:before{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+}
+.footer-un ul input::after{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+}
+.footer-un ul input{
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    background-color: #2B2E3C;
+    color: white;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 20px;
+}
+.footer-un ul input,textarea{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: inherit;
+}
+.footer-un ul .btn {
+    background: white;
+    color: black;
+    border-style: outset;
+    border-color: #000;
+    border-radius: 20px;
+    height: 37px;
+    width: 100px;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    text-shadow: none;
+    margin-top: -5px;
+    margin-left: -40px;
+}
+.footer-un ul .btn:hover{
+    background: #734599;
+    color: white;
+    border-style: outset;
+    border-color: black;
+    height: 37px;
+    width: 100px;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    text-shadow: none;
+    margin-top: -5px;
+    margin-left: -40px;
+}
+.footer-deux{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 472px;
+    margin-top: 222px;
+}
+.footer-deux #facebook {
+    margin-left: 345px;
+    margin-top: -30px;
+    z-index: 2;
+    position: absolute;
+}
+.footer-deux #twitter {
+    margin-top: -30px;
+    margin-left: 386px;
+    z-index: 2;
+    position: absolute;
+}
+.footer-deux #instagram{
+    margin-top: -30px;
+    margin-left: 427px;
+    z-index: 2;
+    position: absolute;
+    
+}
+.footer-deux #linkedin{
+    margin-top: -30px;
+    margin-left: 470px;
+    z-index: 2;
+    position: absolute;
+}
+
+/**Responsive**/
+
+@media all and (max-width: 830px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    }
+    /**Header**/
+#container .navbar{
+    display : inline-block;
+	width : 100px;
+	height : 30px;
+	overflow : hidden;
+	text-align : left;
+	text-indent : -9999px;
+	white-space : nowrap;
+    background: url(../images/Menu-burger.png) no-repeat top left;
+    margin-left: 340px;
+    margin-top: -54px;
+}
+/**Section un**/
+.section-un{
+    background-color: #323C53;
+    background-image: url(../images/foret-enchantee.png);
+    width: 100%;
+    height: 168px;
+    text-align: center;
+    margin-top: 1px;
+}
+.section-un h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-top: 49px;
+}
+/**Section deux**/
+.section-deux{
+    background-color: #323C53;
+    margin-top: -20px;
+    padding-bottom: 218px;
+}
+.section-deux #actu{
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 26px;
+}
+.section-deux img {
+    width: 100%;
+    height: 474px;
+    margin-top: 21px;
+    margin-left: 0px;
+    border-radius: 0px;
+}
+.section-deux .bouton #butn-un{
+    list-style-type: none;
+    background: linear-gradient(#B1488E, #486CB1);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Playfair Display";
+    z-index: 2;
+    position: absolute;
+   
+    width: 151px;
+}
+.bouton ul {
+    position: relative;
+    top: -165px;
+    margin-left: -551px;
+    margin-top: 662px;
+    font-size: 13px;
+}
+/**Section trois**/
+.section-trois{
+    background-color: #B1488E;
+    margin-top: -307px;
+    padding-bottom: 40px;
+}
+.section-trois #titre-deux{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 28px;
+}
+.section-trois #fille{
+    width: 80px;
+    height: 80px;
+    margin-left: 34px;
+    margin-top: 55px;
+}
+.section-trois #perso h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 144px;
+    margin-top: -62px;
+}
+.section-trois #descriptif{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 145px;
+    margin-top: 4px;
+}
+.section-trois #info{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 214px;
+    font-style: italic;
+}
+.section-trois #fleche-circle {
+    margin-left: 309px;
+    margin-top: -26px;
+    z-index: 2;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+}
+.section-trois #next {
+    margin-left: 353px;
+    margin-top: -116px;
+    width: 16px;
+    height: 16px;
+}
+
+/**Section quatre**/
+.section-quatre{
+    background-color: #323C53;
+    margin-top: -20px;
+    padding-bottom: 918px;
+}
+.section-quatre h2{
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 60px;
+}
+.section-quatre .bloc-deux #bonbon{
+    width: 100%;
+    height: 133px;
+    filter: drop-shadow(5px 5px 10px #000) brightness(50%);
+    -webkit-filter: brightness(50%);
+    z-index: 1;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 0px;
+    border-radius: 0px;
+}
+.section-quatre .bloc-deux #bonbon:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.section-quatre .bloc-deux h3{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 141px;
+    margin-top: 49px;
+}
+.section-quatre .bloc-deux p{
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 128px;
+}
+.section-quatre .bloc-deux #fleche-c{
+    z-index: 2;
+    position: absolute;
+    margin-left: 357px;
+    margin-top: 128px;
+    width: 18px;
+    height: 18px;
+}
+.section-quatre .bloc-trois #neige{
+    width: 100%;
+    height: 133px;
+    filter: drop-shadow(5px 5px 10px #000) brightness(50%);
+    -webkit-filter: brightness(50%);
+    z-index: 1;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 0px;
+    border-radius: 0px;
+} 
+.section-quatre .bloc-trois #neige:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.section-quatre .bloc-trois h3{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 158px;
+    margin-top: 217px;
+}
+.section-quatre .bloc-trois #plus-info{
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 303px;
+}
+.section-quatre .bloc-trois #fleche-c2{
+    z-index: 2;
+    position: absolute;
+    margin-left: 357px;
+    margin-top: 302px;
+    width: 18px;
+    height: 18px;
+}
+
+/**Section cinq**/
+.section-cinq{
+    background-color: #3D715C;
+    margin-top: -506px;
+    padding-bottom: 77px;
+}
+.section-cinq h2{
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 24px;
+    margin-bottom: 40px;
+}
+.section-cinq img{
+    width: 921px;
+    height: 602px;
+}
+
+/**Footer**/
+footer{
+    background-color: #4C7097;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 190px;
+}
+footer table{
+    display : inline-block;
+	width : 100px;
+	height : 30px;
+	overflow : hidden;
+	text-align : left;
+	text-indent : -9999px;
+	white-space : nowrap;
+    background: url(../images/burger-blanc.png) no-repeat top left;
+    margin-left: 33px;
+    margin-top: -50px;
+}
+.footer-un {
+    display : inline-block;
+	width : 100px;
+	height : 30px;
+	overflow : hidden;
+	text-align : left;
+	text-indent : -9999px;
+	white-space : nowrap;
+}
+.footer-deux{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: white;
+    margin-left: 33px;
+    margin-top: -9px;
+}
+.footer-deux #facebook {
+    margin-left: 192px;
+    margin-top: -25px;
+    z-index: 2;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+.footer-deux #twitter {
+    margin-top: -25px;
+    margin-left: 226px;
+    z-index: 2;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+.footer-deux #instagram{
+    margin-top: -25px;
+    margin-left: 258px;
+    z-index: 2;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+}
+.footer-deux #linkedin{
+    margin-top: -25px;
+    margin-left: 293px;
+    z-index: 2;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+}
+
+
+
+@media all and (min-width: 1920px){
+    #burger{
+        visibility: hidden;
+    }
+}

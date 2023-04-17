@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FenetrePopupController!{% endblock %}
+
+{% block body %}
+<head>
+    <link rel="stylesheet" href="{{asset('/assets/CSS/fenetre_popup.css')}}">
+</head>
+<div class="popup">
+        <h3>Titre</h3>
+        <img src="{{asset('/assets/images/livre-deux.png')}}" alt="Couverture de livre" style="margin-bottom:586px;">
+        <p id="p-un" style="margin-top:-1173px; margin-bottom:561px;">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Bibendum eget<br> donec amet donec sem aenean<br> ipsum sit aliquam. </p>
+        <br>
+        <p id="p-deux" style="position:absolute; z-index:2; margin-top:-559px;">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Nulla commodo<br> bibendum purus porttitor commodo. Sit<br> id nunc pharetra odio amet.<br> Ut at sit nec dignissim<br> sed pellentesque. Dignissim mi molestie<br> arcu congue aliquet. Laoreet odio<br> mattis pellentesque dictum. Risus volutpat<br> hendrerit iaculis integer quis id sagittis, </p>
+        <button id="btn-un">Acheter Le Livre</button>
+        <button id="btn-deux">Acheter L'Ebook</button>
+       <a href="{{path('app_livres')}}"><p id="fermer" style="margin-top:-788px">X</p></a> 
+</div>
+    {# <ul>
+        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/Jupiter Blackmore_v2/Jupiter Blacmore_v2/src/Controller/FenetrePopupController.php'|file_link(0) }}">src/Controller/FenetrePopupController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/wamp64/www/Jupiter Blackmore_v2/Jupiter Blacmore_v2/templates/fenetre_popup/index.html.twig'|file_link(0) }}">templates/fenetre_popup/index.html.twig</a></code></li>
+    </ul> #}
+{% endblock %}

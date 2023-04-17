@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+}
+.popup img{
+    margin-bottom: -559px;
+}
+
+.popup h3{
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: white;
+    background-color: #4C7097;
+    padding-left: 50px;
+}
+.popup #p-un{
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 556px;
+    margin-top:-1173px;
+    margin-bottom:561px;
+
+}
+.popup #p-deux{
+    position:absolute;
+    z-index: 2;
+    font-family: 'Alice', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 556px;
+    margin-top:-559px;
+}
+.popup #btn-un{
+    list-style-type: none;
+    background: linear-gradient(#B1488E, #486CB1);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    margin-top: 461px;
+    margin-left: 562px;
+    z-index: 2;
+    position: absolute;
+    width: 249px;
+}
+.popup #btn-deux{
+    list-style-type: none;
+    background: linear-gradient(#B1488E, #486CB1);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    margin-top: 566px;
+    margin-left: 562px;
+    z-index: 2;
+    position: absolute;
+    width: 249px;
+}
+.popup img{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.popup #fermer{
+    font-family: 'Tilt Warp', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px #2c2c2c;
+    margin-left: 1380px;
+    margin-top: -788px;
+}
