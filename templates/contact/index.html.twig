@@ -25,14 +25,14 @@
     <div class="form-group mt-2">
     {{ form_widget(form.Message, { attr: { placeholder: "Message :" } }) }}
     </div>
-    <button class="btn btn-primary mt-3">{{ button_label|default('Envoyer')}}</button>
+    <button class="btn btn-primary mt-3" style="background-color: cadetblue; border: none; font-weight: bold; font-size: 13px; margin-bottom:50px">{{ button_label|default('Envoyer')}}</button>
     {{ form_end(form) }}
     </div>
     </div>
     </div>
-    <ul>
+    {# <ul>
         <li>Your controller at <code><a href="{{ 'C:/wamp64/www/Jupiter Blackmore_v2/Jupiter Blacmore_v2/src/Controller/ContactController.php'|file_link(0) }}">src/Controller/ContactController.php</a></code></li>
         <li>Your template at <code><a href="{{ 'C:/wamp64/www/Jupiter Blackmore_v2/Jupiter Blacmore_v2/templates/contact/index.html.twig'|file_link(0) }}">templates/contact/index.html.twig</a></code></li>
-    </ul>
+    </ul> #}
 </div>
 {% endblock %}
